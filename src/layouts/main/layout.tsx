@@ -1,5 +1,10 @@
 'use client';
 
+// eslint-disable-next-line import/no-extraneous-dependencies
+import "slick-carousel/slick/slick.css";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import "slick-carousel/slick/slick-theme.css";
+
 import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 
 import Box from '@mui/material/Box';
