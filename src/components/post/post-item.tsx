@@ -74,6 +74,12 @@ export function PostItem({ post, sx, ...other }: PostItemProps) {
         >
           {post.title}
         </Link>
+
+        <InfoBlock
+          totalViews={post.totalViews}
+          totalShares={post.totalShares}
+          totalComments={post.totalComments}
+        />
       </CardContent>
     </Card>
   );
