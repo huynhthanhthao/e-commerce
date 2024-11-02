@@ -7,6 +7,7 @@ import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll
 
 import { HomeFAQs } from '../home-faqs';
 import { HomeBanners } from '../home-banners';
+import { HomeProducts } from '../home-products';
 import { HomeTestimonials } from '../home-testimonials';
 
 // ----------------------------------------------------------------------
@@ -26,6 +27,9 @@ export function HomeView() {
 
       <Stack sx={{ position: 'relative', bgcolor: 'background.default' }}>
         <HomeBanners />
+
+        <HomeProducts />
+
         <HomeTestimonials />
 
         <HomeFAQs />

@@ -1,4 +1,3 @@
-import i18next from 'i18next';
 
 import { allLangs } from '../all-langs';
 import { fallbackLng } from '../config-locales';
@@ -6,7 +5,7 @@ import { fallbackLng } from '../config-locales';
 // ----------------------------------------------------------------------
 
 export function formatNumberLocale() {
-  const lng = i18next.resolvedLanguage ?? fallbackLng;
+  const lng = fallbackLng;
 
   const currentLang = allLangs.find((lang) => lang.value === lng);
 
