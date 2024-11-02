@@ -10,7 +10,6 @@ import Grid from '@mui/material/Unstable_Grid2';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
 import { _socials } from 'src/_mock';
@@ -22,21 +21,21 @@ import { Logo } from 'src/components/logo';
 
 const LINKS = [
   {
-    headline: 'Minimal',
+    headline: 'Sản phẩm',
     children: [
-      { name: 'About us', href: paths.about },
-      { name: 'Contact us', href: paths.contact },
-      { name: 'FAQs', href: paths.faqs },
+      { name: 'Giày dép', href: '/' },
+      { name: 'Quần áo', href: '/' },
+      { name: 'Túi xách', href: '/' },
     ],
   },
   {
-    headline: 'Legal',
+    headline: 'Tin tức',
     children: [
       { name: 'Terms and condition', href: '#' },
       { name: 'Privacy policy', href: '#' },
     ],
   },
-  { headline: 'Contact', children: [{ name: 'support@minimals.cc', href: '#' }] },
+  { headline: 'Liên hệ', children: [{ name: 'mientaynet.com', href: '#' }] },
 ];
 
 // ----------------------------------------------------------------------
@@ -78,10 +77,11 @@ export function Footer({ layoutQuery, sx }: FooterProps) {
                 mx: 'auto',
                 maxWidth: 280,
                 [theme.breakpoints.up(layoutQuery)]: { mx: 'unset' },
+                textAlign: "justify"
               }}
             >
-              The starting point for your next project with Minimal UI Kit, built on the newest
-              version of Material-UI ©, ready to be customized to your style.
+              ©2012 Miền Tây Net - Trang thông tin tổng hợp chia sẽ từ các nguồn sao chép.
+              Vui lòng fax công văn cảnh báo vi phạm nếu vô tình chúng tôi sao chép thông tin độc quyền từ các quý báo điện tử, trang thông tin.
             </Typography>
 
             <Stack
@@ -144,7 +144,7 @@ export function Footer({ layoutQuery, sx }: FooterProps) {
         </Grid>
 
         <Typography variant="body2" sx={{ mt: 10 }}>
-          © All rights reserved.
+          © mientaynet.com
         </Typography>
       </Container>
     </Box>
@@ -174,7 +174,7 @@ export function HomeFooter({ sx }: HomeFooterProps) {
         <Box sx={{ mt: 1, typography: 'caption' }}>
           © All rights reserved.
           <br /> made by
-          <Link href="https://minimals.cc/"> minimals.cc </Link>
+          <Link href="/"> minimals.cc </Link>
         </Box>
       </Container>
     </Box>
